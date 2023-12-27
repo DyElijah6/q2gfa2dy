@@ -1,0 +1,121 @@
+*{margin: 0;padding: 0; box-sizing: border-box;
+    overflow-y: hidden; }
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding: 6dvh;
+        overflow-x: hidden;
+    }
+    a{text-decoration: none; color: white}
+    a:visited{ text-decoration: underline;}
+    header{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2dvh;
+        padding-bottom: 2dvh;
+        background: #1d1d1da1;
+        color: white;
+        position: fixed;
+        width: 100dvw;
+        font-family:'Gill Sans',sans-serif;
+        font-size: 1.1rem;
+        
+    }
+    main{}
+    header{position: fixed; z-index: 98;}
+    section{
+        height: 100dvh;
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: start;
+        overflow: hidden;
+        padding-top: 4vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    section#banner{
+        position: relative;
+        z-index: 80;
+        padding: 0;
+        background: radial-gradient(circle, rgba(27,36,20,1) 0%, rgba(28,41,28,1) 35%, rgba(10,16,10,1) 100%);
+        p{
+            position: relative;
+            font-family: tech;
+            font-size: xx-large;
+            z-index: 99;
+            text-align: center;
+            top: 25vh;
+            color: rgb(255, 255, 255);
+        }
+    mark.green{
+        color: rgb(21, 131, 111);
+        background: none;
+    }
+    }
+    .bodies{
+        display: inline-block;
+        background-repeat: no-repeat;   
+        background-size: cover;
+        position: relative;
+        z-index: 90;
+    }
+    #corona {
+        background-image: url("media/corona.gif");
+        width: 256px;
+        height: 256px;
+        position: absolute;
+        animation: coronamotion 10s linear infinite;
+    }
+    
+    #cute {
+        background-image: url("media/cute.gif");
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        animation: cutie 8s linear infinite;
+    }
+    
+    #green {
+        background-image: url("media/green.gif");
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        animation: greenz 6s ease-in-out infinite;
+    }
+    
+    #maroon {
+        background-image: url("media/maroon.gif");
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        animation: roonmove 15s linear infinite;
+    }
+    
+    @keyframes greenz {
+        0% { transform: translate(0vw, 0vh) rotate(0deg) scale(1);}
+        50% {transform: translate(30vw, 20vh) rotate(180deg) scale(1.5);}
+        100% {transform: translate(60vw, 40vh) rotate(360deg) scale(1);}
+    }
+    
+    @keyframes coronamotion {
+        0% {transform: translate(10vw, 10vh) scale(0.5);}
+        50% {transform: translate(40vw, 30vh) scale(1);}
+        100% {transform: translate(70vw, 50vh) scale(0.5);}
+    }
+    
+    @keyframes roonmove {
+        0% {transform: translate(20vw, 50vh) scale(1);}
+        50% {transform: translate(50vw, 70vh) scale(1.2);}
+        100% {transform: translate(80vw, 90vh) scale(1);}
+    }
+    
+    @keyframes cutie {
+        0% {transform: translate(30vw, 70vh) scale(1);}
+        50% {transform: translate(60vw, 90vh) scale(1.2);}
+        100% {transform: translate(90vw, 110vh) scale(1);}
+    }
+    @font-face {
+        font-family: tech;
+        src: url(infinite-beyond-font/InfiniteBeyondItalic-rgPlO.ttf);
+    }
